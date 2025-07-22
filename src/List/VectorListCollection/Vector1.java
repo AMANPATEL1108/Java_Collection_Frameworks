@@ -1,9 +1,9 @@
-package VectorListCollection;
+package List.VectorListCollection;
 
-import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.Vector;
 
+//vector is Thread Safe
 public class Vector1 {
     public static void main(String[] args) {
         Vector<Integer> vector=new Vector<>(5,3);
@@ -26,6 +26,11 @@ public class Vector1 {
 
         Vector<Integer> vector1=new Vector<>(linkedList);
         System.out.println(vector1);
+        for(int x:vector1){
+            System.out.println("ok"+x);
+        }
 
+        vector1.clear();
+        System.out.println("Called"+vector1);
     }
 }
